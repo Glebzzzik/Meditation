@@ -73,7 +73,7 @@
                                                 </constraints>
                                                 <color key="textColor" name="gray"/>
                                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
-                                                <textInputTraits key="textInputTraits"/>
+                                                <textInputTraits key="textInputTraits" secureTextEntry="YES"/>
                                                 <userDefinedRuntimeAttributes>
                                                     <userDefinedRuntimeAttribute type="color" keyPath="placeholderLabel.textColor">
                                                         <color key="value" name="gray"/>
@@ -107,6 +107,10 @@
                                         <integer key="value" value="10"/>
                                     </userDefinedRuntimeAttribute>
                                 </userDefinedRuntimeAttributes>
+                                <connections>
+                                    <action selector="signInAvction:" destination="Y6W-OH-hqX" eventType="touchUpInside" id="EkK-Ld-4PT"/>
+                                    <segue destination="mTK-Nl-mYg" kind="show" identifier="goHome" id="2Br-Dy-4qP"/>
+                                </connections>
                             </button>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Register" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Dte-r2-xVe">
                                 <rect key="frame" x="30" y="623" width="354" height="24"/>
@@ -165,6 +169,16 @@
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Ief-a0-LHa" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="34.782608695652179" y="83.705357142857139"/>
+        </scene>
+        <!--Home-->
+        <scene sceneID="vxL-g6-TlX">
+            <objects>
+                <viewControllerPlaceholder storyboardName="Home" id="mTK-Nl-mYg" sceneMemberID="viewController">
+                    <navigationItem key="navigationItem" id="E76-ge-obP"/>
+                </viewControllerPlaceholder>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="rVp-nx-gSi" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="624" y="52"/>
         </scene>
     </scenes>
     <resources>
