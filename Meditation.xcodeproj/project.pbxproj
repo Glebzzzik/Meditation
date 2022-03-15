@@ -13,6 +13,8 @@
 		414ABA9527DFCB5C00100E60 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 414ABA9327DFCB5C00100E60 /* Main.storyboard */; };
 		414ABA9727DFCB5E00100E60 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 414ABA9627DFCB5E00100E60 /* Assets.xcassets */; };
 		414ABA9A27DFCB5E00100E60 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 414ABA9827DFCB5E00100E60 /* LaunchScreen.storyboard */; };
+		41D8EFAC27E06B3F00C850E8 /* SignIn.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 41D8EFAB27E06B3F00C850E8 /* SignIn.storyboard */; };
+		41D8EFAE27E06B4600C850E8 /* SignUp.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 41D8EFAD27E06B4600C850E8 /* SignUp.storyboard */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -24,6 +26,8 @@
 		414ABA9627DFCB5E00100E60 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		414ABA9927DFCB5E00100E60 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		414ABA9B27DFCB5E00100E60 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		41D8EFAB27E06B3F00C850E8 /* SignIn.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = SignIn.storyboard; sourceTree = "<group>"; };
+		41D8EFAD27E06B4600C850E8 /* SignUp.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = SignUp.storyboard; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -56,15 +60,57 @@
 		414ABA8C27DFCB5C00100E60 /* Meditation */ = {
 			isa = PBXGroup;
 			children = (
-				414ABA8D27DFCB5C00100E60 /* AppDelegate.swift */,
-				414ABA8F27DFCB5C00100E60 /* SceneDelegate.swift */,
-				414ABA9127DFCB5C00100E60 /* ViewController.swift */,
-				414ABA9327DFCB5C00100E60 /* Main.storyboard */,
-				414ABA9627DFCB5E00100E60 /* Assets.xcassets */,
-				414ABA9827DFCB5E00100E60 /* LaunchScreen.storyboard */,
+				414ABAA227DFCB9D00100E60 /* Model */,
+				414ABAA127DFCB9900100E60 /* View */,
+				414ABAA427DFCBA400100E60 /* Controller */,
+				414ABAA327DFCBA000100E60 /* Common */,
 				414ABA9B27DFCB5E00100E60 /* Info.plist */,
 			);
 			path = Meditation;
+			sourceTree = "<group>";
+		};
+		414ABAA127DFCB9900100E60 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				41D8EFAF27E06B6800C850E8 /* Authorization */,
+				414ABA9327DFCB5C00100E60 /* Main.storyboard */,
+				414ABA9827DFCB5E00100E60 /* LaunchScreen.storyboard */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		414ABAA227DFCB9D00100E60 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		414ABAA327DFCBA000100E60 /* Common */ = {
+			isa = PBXGroup;
+			children = (
+				414ABA8F27DFCB5C00100E60 /* SceneDelegate.swift */,
+				414ABA8D27DFCB5C00100E60 /* AppDelegate.swift */,
+				414ABA9627DFCB5E00100E60 /* Assets.xcassets */,
+			);
+			path = Common;
+			sourceTree = "<group>";
+		};
+		414ABAA427DFCBA400100E60 /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				414ABA9127DFCB5C00100E60 /* ViewController.swift */,
+			);
+			path = Controller;
+			sourceTree = "<group>";
+		};
+		41D8EFAF27E06B6800C850E8 /* Authorization */ = {
+			isa = PBXGroup;
+			children = (
+				41D8EFAB27E06B3F00C850E8 /* SignIn.storyboard */,
+				41D8EFAD27E06B4600C850E8 /* SignUp.storyboard */,
+			);
+			path = Authorization;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -125,6 +171,8 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				41D8EFAE27E06B4600C850E8 /* SignUp.storyboard in Resources */,
+				41D8EFAC27E06B3F00C850E8 /* SignIn.storyboard in Resources */,
 				414ABA9A27DFCB5E00100E60 /* LaunchScreen.storyboard in Resources */,
 				414ABA9727DFCB5E00100E60 /* Assets.xcassets in Resources */,
 				414ABA9527DFCB5C00100E60 /* Main.storyboard in Resources */,
