@@ -33,7 +33,7 @@ class Home: UIViewController, UICollectionViewDelegate, UICollectionViewDataSour
                 for i in answer["data"] {
                     self.feelingList.append(FeelingModel(id: i.1["id"].intValue, position: i.1["position"].intValue, title: i.1["title"].stringValue, image: i.1["image"].stringValue))
                 }
-                print(self.feelingList)
+    
                 self.feelingCollectionView.reloadData()
             case .failure(let error):
                 self.alert(message: error.localizedDescription)
@@ -49,7 +49,6 @@ class Home: UIViewController, UICollectionViewDelegate, UICollectionViewDataSour
         let cell = collectionView.dequeueReusableCell(withReuseIdentifier: "Feeling", for: indexPath) as! Feeling
         
         cell.image.sd_setImage(with: URL(string: feelingList[indexPath.row].image), completed: nil)
-        
         cell.name.text = feelingList[indexPath.row].title
         
         return cell
